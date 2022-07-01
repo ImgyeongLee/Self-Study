@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+}
+
+.button-container {
+  position: absolute;
+  width: 100%;
+  top: 86%;
+  display: flex;
+  justify-content: center;
+}
+
+.close-button {
+  cursor: pointer;
+}
+
+#main {
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  border-radius: 2px;
+}
+
+#dialog {
+  background-color: green;
+  border-radius: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-39%, 100%);
+}
+
+#portrait {
+  background-color: purple;
+  border-radius: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-310%, 100%);
+  cursor: pointer;
+}
+
+#profile {
+  position: absolute;
+  width: 800;
+  height: 100%;
+  background-color: skyblue;
+  left: -800;
+  z-index: 2;
+}
+
+#special-button {
+  display: none;
+  padding: 5px 10px 5px 10px;
+  font-size: 15px;
+  z-index: 1;
+  cursor: pointer;
+}
