@@ -12,6 +12,9 @@ my_img3 = ImageTk.PhotoImage(Image.open("trash.png"))
 
 image_list = [my_img1, my_img2, my_img3]
 
+# bd - border
+# relief=TYPE - kind of style
+# anchor=POS - place the object
 status = Label(root, text="Image 1 of " + str(len(image_list)), bd=1, relief=SUNKEN, anchor=E)
 
 my_label = Label(image=my_img1)
@@ -46,6 +49,7 @@ button_next = Button(root, text=">>", command=lambda: button_work("next", 2))
 button_back.grid(row=1, column=0)
 button_exit.grid(row=1, column=1)
 button_next.grid(row=1, column=2)
+# sticky=POS+POS : stretch
 status.grid(row=2, column=0, columnspan=3, sticky=W+E)
 
 root.mainloop()
